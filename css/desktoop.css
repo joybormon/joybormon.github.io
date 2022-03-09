@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Tahoma, sans-serif;
+    background-color: black;
+    
+}
+
+/* basic stucture of website */
+
+section{
+    margin: 0;
+    padding: 0rem 0rem;
+    background-color: rgba(0, 0, 255, 0);
+    
+}
+
+section h2{
+    text-align: center;
+    color: white;
+}
+
+section p{
+    color: white;
+    margin-top: 20px;
+}
+
+.basic-container{
+    margin: 0rem 3rem;
+    padding: 0.5rem 0rem;
+    
+    
+}
+
+.dotted{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 80px;
+}
+.dotted-sm{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 20px;
+}
+
+
+
+/* Header style start from here */
+
+nav{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: Tahoma, sans-serif;
+    height: 45px;
+    background: rgba(134, 8, 107, 0.877);
+}
+
+.fixed{
+    position: fixed;
+}
+nav .logoi{
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    
+    
+
+}
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav .links li{
+list-style: none;
+border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+
+}
+
+nav .links a{
+display: block;
+padding: 0.3rem 1rem;
+font-size: 16px;
+font-weight: bold;
+color: white;
+text-decoration: none;
+border-radius: 20px;
+transition: all .3s;
+}
+
+nav .links a:hover{
+    background: rgb(250, 250, 249);
+    color: rgb(31, 31, 168);
+    
+    
+}
+li.active{
+    border: 2px solid white !important;
+    border-radius: 20px;
+}
+
+#nav-toggle{
+position: absolute;
+top: -100px;
+}
+
+nav .nav-icon{
+position: absolute;
+display: none;
+right: 5%;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+
+nav .nav-icon .line{
+width: 25px;
+height: 3px;
+background: white;
+margin: 5px;
+border-radius: 3px;
+}
+.mobile-menu{
+    display: none;
+}
+/* Main section Start from here */
+
+.main{
+    padding-top: 80px;
+    height: 480px;
+    background: linear-gradient(rgba(11, 91, 165, 0.767), rgba(134, 8, 107, 0.918)), url(../img/bg\ \(1\).jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.main .main-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-30%);
+}
+
+.main h1{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 15px;
+    
+}
+
+.main p{
+    font-size: 0.8rem;
+    color: rgba(223, 217, 217, 0.986);
+    margin-bottom:  30px;
+    
+}
+
+.main .main-span{
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid blue;
+    color: white;
+    border-radius: 20px;
+    background: transparent;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+}
+
+.main .main-span:hover{
+    color: blue;
+    background: white;
+}
+
+
+/* Services Style start from here */
+
+.services{
+    padding-top: 65px;
+    background: linear-gradient(rgba(11, 91, 165, 0.89),rgba(134, 8, 107, 0.89)), url(../img/skill.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.services h2{
+    text-align: center;
+    color: white;
+}
+
+.services p{
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+.services .service-card{
+    height: 13rem;
+    background-color:rgba(233, 69, 197, 0.377);
+    text-align: center;
+    font-weight: 25px;
+    color: white;
+    padding: 2rem;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0);
+    transition: 0.3s;
+  
+}
+
+.services .service-card:hover{
+    background-color: rgba(134, 8, 107, 0.877);
+    border: 2px solid gray;
+}
+
+.services .service-card p{
+    color: rgb(226, 207, 207);
+    font-size: 0.7555rem;
+    text-align: justify;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+
+.service-span{
+    cursor: pointer;
+    background-color: chocolate;
+    padding: 5px 15px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    transition: 0.3s;
+}
+
+.service-span:hover{
+    color: teal;
+    background-color: white;
+}
+
+
+
+
+/* Portfolio Style start from here */
+.portfolio{
+    background: rgb(240, 162, 17);
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding-top: 65px;
+    background: linear-gradient(rgba(11, 91, 165, 0.89),rgba(18, 39, 161, 0.89)), url(../img/skill.jpg);
+    background-size: cover;
+    background-position: center top;
+    
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio-card{
+    max-width: 180px;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: rgba(233, 69, 197, 0.377);;
+    align-items: center;
+    padding: 0px;
+    border: 2px solid rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    text-align: center; 
+    margin: 0px 10px;  
+    box-shadow: 0px 0px 20px 0px rgba(19, 16, 16, 0.781);
+}
+.portfolio-card:hover{
+    background-color: rgba(255, 0, 0, 0);
+    transition: all 1s;
+}
+
+.portfolio-card h4{
+    font-size: 20px;
+    color: white;
+    padding: 3px;
+    margin-top: 5px;
+}
+.portfolio-card p{
+    font-size: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+
+.portfolio-span{
+    cursor: pointer;
+    background-color: chocolate;
+    padding: 5px 15px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    transition: 0.3s;
+}
+
+.portfolio-span:hover{
+    color: teal;
+    background-color: white;
+}
+
+
+
+
+/* About Style start from here */
+.about{
+    padding-top: 65px;
+    background: linear-gradient(rgba(11, 91, 165, 0.705),rgba(134, 8, 107, 0.342)), url(../img/bg\ \(1\).jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.about h2{
+    text-align: center;
+    color: white;
+}
+
+.about p{
+    color: white;
+    margin: 10px 1px;
+    text-align: left;
+    
+}
+
+
+.about-card{
+    background-color: rgba(228, 20, 200, 0.342);
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.about-card img{
+    border: 5px solid gray;
+    padding: .05rem;
+    height: 12rem;
+    width: auto;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.about-card img:hover{
+    border: 5px solid white;
+    
+}
+
+.about-card .description p{
+    text-align: left;
+    justify-content: center;
+    
+}
+
+.about-span{
+    display: block;
+    margin: 20px 60px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid rgb(252, 252, 252);
+    padding: 8px 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+.about-span:hover{
+    
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* contact Style start from here */
+.contact{
+    padding-top: 65px;
+    background: linear-gradient(rgba(11, 91, 165, 0.89),rgba(134, 8, 107, 0.89)), url(../img/skill.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    justify-content: center;
+    grid-gap: 2rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* .contact-container input, textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+.contact-container textarea{
+    height: 150px;
+}
+
+.contact-container button{
+    cursor: pointer;
+    background-color: rgba(248, 97, 9, 0.781);
+    border-radius: 50px;
+    border: 2px solid rgb(252, 252, 252);
+    padding: 5px 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.contact-icons{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+
+}
+.contact-icons span, .span{
+    font-size: 25px;
+    background-color: black;
+    padding: 2px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+.contact-icons span:hover, .span:hover{
+    background-color: white;
+    color: black;
+}
+
+.contact-container h4{
+    color: white;
+} */
+
+.contact-container h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.contact-container .input-cnt{
+    display: flex;
+    padding: 0;
+    margin: 10px; 
+}
+
+.contact-container .input-cnt > span{
+    min-width: 40px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(146, 53, 146);
+    background-color: lightgray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+}
+.contact-container .input-cnt > .compose{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 10px;
+    padding-top: 45px;
+}
+
+.contact-container .input-cnt > input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2px solid lightgray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 25px;
+    width: 100%;
+}
+
+.contact-container .input-cnt > textarea{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid lightgray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    width: 100%;
+    resize: none;
+    height: 100px;
+}
+
+.contact-container .input-cnt:hover > span{
+    background-color:rgba(184, 48, 184, 0.89);
+    color: white;
+    transition: all 1s;
+}
+.contact-container .input-cnt:hover > input{
+    border: 2px solid  rgba(184, 48, 184, 0.89);
+    transition: all 1s;
+}
+.contact-container .input-cnt:hover > textarea{
+    border: 2px solid  rgba(184, 48, 184, 0.89);
+    transition: all 1s;
+}
+
+.contact-container button{
+    cursor: pointer;
+    background-color: rgba(248, 97, 9, 0);
+    border-radius: 50px;
+    border: 2px solid rgb(252, 252, 252);
+    padding: 5px 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.contact-container button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.89);
+    border: 2px solid rgb(252, 252, 252);
+    color: rgb(187, 25, 160);
+}
+
+
+
+.contact-icons{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 0rem;
+    margin-top: 0rem;
+    text-align: center;
+
+}
+.contact-icons span, .span{
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+.contact-icons span:hover, .span:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* footer start from here */
+.footer{
+    background: black;
+    height: auto;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer p{
+    
+}
+
+
+
+
+

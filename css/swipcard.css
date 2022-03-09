@@ -1,0 +1,73 @@
+.uk-section {
+    
+  }
+  .owl-carousel {
+    position: relative;
+    margin-top: 100px;
+  }
+  .owl-nav {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+  }
+  .uk-card-primary {
+    border-radius: 8px;
+        border-radius: 8px;
+        margin: 25px;
+        background: red;
+        padding: 25px;
+        min-width: 150px;
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        
+        
+        
+  }
+  h3 {
+    margin-top: 10px
+  }
+  .uk-card > :last-child {
+    margin-top:0;
+    margin-bottom: 10px
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .owl-next {
+    background: #3286f0;
+  }
+  .owl-theme .owl-nav [class*='owl-'] {
+    background: #383838;
+  }
+  .owl-dots {
+    margin-top: 30px;
+  }
+  .uk-card-title {
+    padding-bottom: 20px
+  }
+  
+  .owl-theme .owl-nav {
+      margin-top: 10px;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+  }
+  .owl-nav {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translate(-50%);
+  }
+  
+  .owl-theme .owl-dots .owl-dot span{
+      background: red;
+  }
+  
+  
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: yellow;
+  }
+  

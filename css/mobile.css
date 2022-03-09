@@ -1,0 +1,155 @@
+@media screen and (max-width: 767px) {
+    body{
+        background-color: red;
+    }  
+    nav span{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links{
+        display: none;
+    }
+
+    
+nav .nav-icon{
+    position: absolute;
+    display: table;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+nav .mobile-menu{
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 0px;
+        bottom: 100%;
+        width: 0%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.932);
+        overflow: hidden;
+        transition: all .4s ease-in-out;
+        display: block;
+    }
+    nav .mobile-menu span{
+        color: rgb(255, 0, 0);
+        font-size: 2rem;
+        position: fixed;
+        right: 60px;
+        top: -30%;
+        cursor: pointer;
+    }
+    nav .mobile-menu span:hover{
+        color: rgb(21, 235, 250);
+    }
+    nav .mobile-menu .menu-content{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+ 
+    nav .mobile-menu .menu-content a{
+        text-transform: uppercase;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 25px;
+        width: 50%;
+        padding: 10px;
+        margin-left: 50%;
+        transform: translateX( -50%);
+        border-radius: 20px;
+        transition: all 0.5s;
+        border: 2px solid rgba(128, 128, 128, 0);
+        font-size: 16px;
+    }
+    nav .mobile-menu .menu-content a:hover{
+        border: 2px solid rgb(255, 251, 251);
+    }
+
+
+/* Main start from here */
+
+    .main h1{
+        font-size: 1.3rem;
+        color: white;
+        margin-bottom: 15px;
+        
+    }
+
+    .main .main-span{
+        cursor: pointer;
+        font-weight: bold;
+        padding: 5px 10px;
+        border: 2px solid blue;
+        color: white;
+        border-radius: 15px;
+        background: transparent;
+        text-transform: capitalize;
+        transition: all 0.5s;
+        font-size: 1rem;
+    }
+    
+
+/* Service start from here */
+
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(1, 15rem);
+        justify-content: center;
+        grid-gap: 1rem;
+        padding-top: 1.5rem;
+    }
+/* about start from here */
+
+    .about-container{
+        display: grid;
+        grid-template-columns: repeat(1, 20rem);
+        justify-content: center;
+        grid-gap: .5rem;
+        
+    }
+    
+    
+/* contact start from here */
+
+    .contact-container{
+            display: grid;
+            grid-template-columns: repeat(1, 20rem);
+            justify-content: center;
+            grid-gap: 0rem;
+            
+        }
+        
+
+        .social-container{
+            margin-top: 50px;
+        }
+    
+/* footer start from here */
+
+.footer p{
+    color: white;
+    text-align: center;
+    font-size: 9px;
+    font-weight: bold;
+}
+    
+
+}
+
+
+
+
+
+
+
+   
